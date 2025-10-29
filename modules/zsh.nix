@@ -11,7 +11,7 @@
       export PATH=/home/nova/.config/emacs/bin/:$PATH
     '';
     shellAliases = {
-      nrs = "sudo nixos-rebuild switch --impure --flake /home/nova/dotfiles/";
+      nrs = "sudo nixos-rebuild switch --impure --flake /home/nova/nix-configs/";
       bdupdate = "betterdiscordctl -f canary install";
     };
   };
