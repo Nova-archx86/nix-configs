@@ -86,6 +86,7 @@ in
     openrgb
     nodejs
     i2c-tools
+    zig
   ];
   
   xdg.portal.enable = true;
