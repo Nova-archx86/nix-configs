@@ -3,7 +3,7 @@
   imports =
     [ # Include the results of the hardware scan.
       /etc/nixos/hardware-configuration.nix # requires --impure to be passed
-      inputs.home-manager.nixosModules.default;
+      inputs.home-manager.nixosModules.default
     ];
 
   networking.hostName = "lt-caesium"; # Define your hostname.
