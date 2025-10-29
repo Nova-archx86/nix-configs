@@ -88,6 +88,7 @@
     i2c-tools
     zig
     zls
+    man-db
   ];
   
   xdg.portal.enable = true;

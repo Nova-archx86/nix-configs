@@ -76,6 +76,7 @@
     gnupg
     pinentry-tty
     nodejs
+    man-db
   ];
   
   xdg.portal.enable = true;
