@@ -1,18 +1,10 @@
-{ config, lib, pkgs, ... }:
-let
-  home-manager = builtins.fetchTarball "https://github.com/nix-community/home-manager/archive/master.tar.gz";
-in
+{ config, lib, pkgs, inputs, ... }:
 {
   imports =
     [ # Include the results of the hardware scan.
       /etc/nixos/hardware-configuration.nix # requires --impure to be passed
-      (import "${home-manager}/nixos")
+      inputs.home-manager.nixosModules.default;
     ];
-
-  home-manager.useUserPackages = true;
-  home-manager.useGlobalPkgs = true;
-  home-manager.backupFileExtension = "backup";
-  home-manager.users.nova = import ./home.nix;
 
   networking.hostName = "lt-caesium"; # Define your hostname.
   networking.wireless.iwd.enable = true;
@@ -43,6 +35,13 @@ in
     description = "nova";
     extraGroups = [ "networkmanager" "wheel" "syncthing" "storage" "video" "optical" ];
     packages = with pkgs; [];
+  };
+
+  home-manager = {
+    useUserPackages = true;
+    useGlobalPkgs = true;
+    backupFileExtension = "backup";
+    users.nova = import ./home.nix;
   };
 
   # Allow unfree packages

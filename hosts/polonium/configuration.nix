@@ -2,22 +2,15 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
-let
-  home-manager = builtins.fetchTarball "https://github.com/nix-community/home-manager/archive/master.tar.gz";
-in
+
 {
   imports =
     [ # Include the results of the hardware scan.
       /etc/nixos/hardware-configuration.nix # requires --impure to be passed
-      (import "${home-manager}/nixos")
+      inputs.home-manager.nixosModules.default
     ];
-
-  home-manager.useUserPackages = true;
-  home-manager.useGlobalPkgs = true;
-  home-manager.backupFileExtension = "backup";
-  home-manager.users.nova = import ./home.nix;
 
   networking.hostName = "dt-polonium"; # Define your hostname.
   networking.networkmanager.enable = true;
@@ -50,6 +43,13 @@ in
     packages = with pkgs; [];
   };
 
+  home-manager = {
+    useUserPackages = true;
+    useGlobalPkgs = true;
+    backupFileExtension = "backup";
+    users.nova = import ./home.nix;
+  };
+  
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
