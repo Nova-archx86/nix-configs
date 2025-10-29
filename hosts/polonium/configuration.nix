@@ -87,6 +87,7 @@ in
     nodejs
     i2c-tools
     zig
+    zls
   ];
   
   xdg.portal.enable = true;
