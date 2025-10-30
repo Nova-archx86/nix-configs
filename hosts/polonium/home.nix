@@ -15,7 +15,7 @@
     ../../modules/mu.nix
     ../../modules/mbsync.nix
     ../../modules/gtk.nix
-    ../../modules/keepassxc.nix
+    #../../modules/keepassxc.nix
   ];
 
   home = {

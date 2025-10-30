@@ -4,7 +4,7 @@
   programs.keepassxc = {
     enable = true;
     settings = {
-      browser.enable = true;
+      Browser.Enabled = true;
       GUI = {
         ApplicationTheme = "dark";
         CompactMode = true;
