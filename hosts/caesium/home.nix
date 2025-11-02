@@ -39,7 +39,8 @@
     graphviz
     sbclPackages.simple-inferiors
     hyprpaper
-    librewolf
+    #librewolf
+    firefox
     waybar
     wireplumber
     xdg-desktop-portal
