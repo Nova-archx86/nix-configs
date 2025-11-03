@@ -105,6 +105,7 @@
     zig
     zls
     man-db
+    lact
   ];
   
   xdg.portal.enable = true;
