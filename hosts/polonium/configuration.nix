@@ -122,6 +122,7 @@
   };
 
   services = {
+    lact.enable = true;
     openssh.enable = false;
     printing.enable = true;
     hypridle.enable = true;
