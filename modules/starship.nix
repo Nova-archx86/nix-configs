@@ -7,18 +7,24 @@
 
     settings = {
 
-      add_newline = false;
-
-      format = [
-        "$git_status"
-        "$character"
-      ];
+      add_newline = true;
 
       character = {
         success_symbol = "[λ](bold blue)";
         error_symbol = "[ ](bold red)";
       };
 
+      directory = {
+        truncation_length = 2;
+        truncate_to_repo = true;
+        read_only = " ";
+      };
+
+      nix_shell = {
+        symbol = " ";
+        style = "bold blue";
+      };
+      
     };
     
   };

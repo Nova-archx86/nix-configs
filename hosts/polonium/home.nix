@@ -16,6 +16,7 @@
     ../../modules/mbsync.nix
     ../../modules/gtk.nix
     #../../modules/keepassxc.nix
+    ../../modules/starship.nix
   ];
 
   home = {
