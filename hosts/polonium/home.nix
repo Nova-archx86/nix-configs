@@ -30,6 +30,7 @@
 
     packages = with pkgs; [
       zsh
+      starship
       bat
       lsd
       spotify
