@@ -138,12 +138,12 @@ in
       # Fix dragging issues with XWayland
       windowrulev2 = [
         "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
-        "forcergbx, class:^(Emacs)$"
+        #"forcergbx, class:^(Emacs)$"
         "float, class: ^(org.keepassxc.KeePassXC)$"
         "float, class: ^(steam)$"
         "float, class: ^(discord)$"
         "float, class: ^(org.telegram.desktop)$"
-        "opacity 0.85 override 0.85 override, class: ^(Emacs)$"
+        #"opacity 0.85 override 0.85 override, class: ^(Emacs)$"
       ];
     };
   };
