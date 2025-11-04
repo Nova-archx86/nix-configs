@@ -12,8 +12,8 @@ in
   services.hyprpaper = {
     enable = true;
     settings = {
-      preload = [ "~/Pictures/Wallpapers/nord-mountains.png" ];
-      wallpaper = [ "DP-1,~/Pictures/Wallpapers/nord-mountains.png" "LVDS-1,~/Pictures/Wallpapers/nord-mountains.png" ];
+      preload = [ "~/nixos-config/wallpapers/nord-mountains.png" ];
+      wallpaper = [ "DP-1,~/nixos-config/wallpapers/nord-mountains.png" "LVDS-1,~/nixos-config/wallpapers/nord-mountains.png" ];
     };
   };
 
