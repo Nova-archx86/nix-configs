@@ -12,8 +12,8 @@ in
   services.hyprpaper = {
     enable = true;
     settings = {
-      preload = [ "~/Pictures/Wallpapers/wild.png" ];
-      wallpaper = [ "DP-1,~/Pictures/Wallpapers/wild.png" "LVDS-1,~/Pictures/Wallpapers/wild.png" ];
+      preload = [ "~/Pictures/Wallpapers/nord-mountains.png" ];
+      wallpaper = [ "DP-1,~/Pictures/Wallpapers/nord-mountains.png" "LVDS-1,~/Pictures/Wallpapers/nord-mountains.png" ];
     };
   };
 
