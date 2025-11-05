@@ -18,6 +18,7 @@
     #../../modules/keepassxc.nix
     ../../modules/starship.nix
     ../../modules/pass.nix
+    ../../modules/yt-dlp.nix
   ];
 
   home = {
