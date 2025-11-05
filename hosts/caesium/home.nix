@@ -12,8 +12,8 @@
     ../../modules/kitty.nix
     ../../modules/mako.nix
     ../../modules/wofi.nix
-    ../../modules/mu.nix
-    ../../modules/mail.nix
+    #../../modules/mu.nix
+    #../../modules/mail.nix
     ../../modules/gtk.nix
     ../../modules/starship.nix
     ../../modules/pass.nix
