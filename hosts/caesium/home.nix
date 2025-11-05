@@ -13,7 +13,7 @@
     ../../modules/mako.nix
     ../../modules/wofi.nix
     ../../modules/mu.nix
-    ../../modules/mbsync.nix
+    ../../modules/mail.nix
     ../../modules/gtk.nix
     ../../modules/starship.nix
     ../../modules/pass.nix
