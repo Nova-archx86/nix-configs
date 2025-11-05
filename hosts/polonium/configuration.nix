@@ -55,7 +55,7 @@
     shell = pkgs.zsh;
     isNormalUser = true;
     description = "nova";
-    extraGroups = [ "networkmanager" "wheel" "syncthing" ];
+    extraGroups = [ "networkmanager" "wheel" "storage" "disk" "optical" ];
     packages = with pkgs; [];
   };
 
@@ -122,6 +122,8 @@
   };
 
   services = {
+    udisks2.enable = true;
+    devmon.enable = true;
     lact.enable = true;
     openssh.enable = false;
     printing.enable = true;
