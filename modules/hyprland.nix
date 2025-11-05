@@ -143,6 +143,7 @@ in
         "float, class: ^(steam)$"
         "float, class: ^(discord)$"
         "float, class: ^(org.telegram.desktop)$"
+        "float, class: ^(pcmanfm)$"
         #"opacity 0.85 override 0.85 override, class: ^(Emacs)$"
       ];
     };
