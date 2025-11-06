@@ -69,6 +69,7 @@
       nixfmt
       bluez
       bluez-tools
+      mupdf
     ];
   };
   
