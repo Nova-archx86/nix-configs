@@ -10,7 +10,7 @@
     enableGitIntegration = true;
 
     settings = {
-      background_opacity = 0.9;
+      background_opacity = 0.6;
     };
     
   };
