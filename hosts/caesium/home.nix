@@ -59,6 +59,8 @@
     clang-tools
     nixfmt
     #steam
+    mupdf
+    wl-copy
   ];
  # bar
 
