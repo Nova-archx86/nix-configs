@@ -60,7 +60,7 @@
     nixfmt
     #steam
     mupdf
-    wl-copy
+    wl-clipboard
   ];
  # bar
 

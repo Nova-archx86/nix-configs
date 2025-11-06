@@ -70,7 +70,7 @@
       bluez
       bluez-tools
       mupdf
-      wl-copy
+      wl-clipboard
     ];
   };
   
