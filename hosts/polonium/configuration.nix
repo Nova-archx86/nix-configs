@@ -54,7 +54,7 @@
     shell = pkgs.zsh;
     isNormalUser = true;
     description = "nova";
-    extraGroups = [ "networkmanager" "wheel" "storage" "disk" "optical" ];
+    extraGroups = [ "networkmanager" "wheel" "storage" "disk" "optical" "libvirtd" ];
     packages = with pkgs; [];
   };
 
