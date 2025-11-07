@@ -144,6 +144,8 @@ in
         "float, class: ^(discord)$"
         "float, class: ^(org.telegram.desktop)$"
         "float, class: ^(pcmanfm)$"
+        "float, class: ^(VirtualBox)$"
+        "float, class: ^(.virt-manager-wrapped)$"
         #"opacity 0.85 override 0.85 override, class: ^(Emacs)$"
       ];
     };
