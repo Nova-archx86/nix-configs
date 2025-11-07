@@ -15,7 +15,6 @@
     ../../modules/mu.nix
     #../../modules/mail.nix
     ../../modules/gtk.nix
-    #../../modules/keepassxc.nix
     ../../modules/starship.nix
     ../../modules/pass.nix
     ../../modules/yt-dlp.nix
