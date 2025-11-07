@@ -147,9 +147,11 @@
   };
 
   users.groups.libvirtd.members = ["nova"];
+  users.extraGroups.vboxusers.members = [ "nova" ];
   virtualisation = {
     libvirtd.qemu.enable = true;
     spiceUSBRedirection.enable = true;
+    virtualbox.host.enable = true;
   };
 
   # Clean up old pkgs automatically
