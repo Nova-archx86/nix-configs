@@ -71,6 +71,7 @@
       bluez-tools
       mupdf
       wl-clipboard
+      gzdoom
     ];
   };
   
