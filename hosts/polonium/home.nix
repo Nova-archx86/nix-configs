@@ -72,7 +72,6 @@
       wl-clipboard
       gzdoom
       virt-manager
-      virtualbox
     ];
   };
   dconf.settings = {
