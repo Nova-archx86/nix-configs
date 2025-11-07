@@ -71,6 +71,7 @@
       mupdf
       wl-clipboard
       gzdoom
+      virt-manager
     ];
   };
   

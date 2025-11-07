@@ -104,6 +104,8 @@
     zls
     man-db
     lact
+    libvirt
+    qemu
   ];
   
   xdg.portal.enable = true;
@@ -142,6 +144,12 @@
       pulse.enable = true;
       jack.enable = true;
     };
+  };
+
+  users.groups.libvirtd.members = ["nova"];
+  virtualisation = {
+    libvirtd.qemu.enable = true;
+    spiceUSBRedirection.enable = true;
   };
 
   # Clean up old pkgs automatically
