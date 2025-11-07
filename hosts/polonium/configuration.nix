@@ -42,7 +42,6 @@
 
   programs.gnupg.agent = {
     enable = true;
-    pinentryPackage = pkgs.pinentry-tty;
   };
   
   programs.zsh.enable = true;
@@ -97,7 +96,6 @@
     nh
     gvfs
     gnupg
-    pinentry-tty
     #openlinkhub # Currently bugged. :(
     openrgb
     nodejs
