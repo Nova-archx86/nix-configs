@@ -13,6 +13,9 @@
     shellAliases = {
       nrs = "sudo nixos-rebuild switch --impure --flake /home/nova/nixos-config/";
       bdupdate = "betterdiscordctl -f canary install";
+      py-dev = "nix develop /home/nova/nixos-config/dev/#python";
+      c-dev = "nix develop /home/nova/nixos-config/dev/#default";
+      zigc-dev = "nix develop /home/nova/nixos-config/dev/#zigc";
     };
   };
 
