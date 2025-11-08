@@ -88,8 +88,6 @@
     ripgrep
     fd
     cmake
-    gnumake
-    gcc
     libvterm
     libtool
     brightnessctl
@@ -100,8 +98,6 @@
     openrgb
     nodejs
     i2c-tools
-    zig
-    zls
     man-db
     lact
     libvirt
