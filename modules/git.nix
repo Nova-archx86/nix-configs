@@ -4,8 +4,10 @@
  programs.git = {
     enable = true;
 
-    userName = "Nova-archx86";
-    userEmail = "moorcode66@yahoo.com";
+    settings = {
+      user.email = "moorcode66@yahoo.com";
+      user.name = "Nova-archx86";
+    };
 
     signing = {
       key = "moorcode66@yahoo.com";
