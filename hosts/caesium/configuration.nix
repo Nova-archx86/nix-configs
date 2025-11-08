@@ -81,15 +81,12 @@
     ripgrep
     fd
     cmake
-    gnumake
-    gcc
     libvterm
     libtool
     brightnessctl
     nh
     gvfs
     gnupg
-    nodejs
     man-db
   ];
   
