@@ -15,8 +15,8 @@
    devShells."x86_64-linux".python = pkgs.mkShell {
      packages = with pkgs; [
        (pkgs.python3.withPackages (python-pkgs: [
-         python-pkgs.pandas
          python-pkgs.requests
+         python-pkgs.discord
     ]))];
    };
    devShells."x86_64-linux".zigc = pkgs.mkShell {
