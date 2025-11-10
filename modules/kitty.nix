@@ -4,13 +4,13 @@
   programs.kitty = {
     enable = true;
     shellIntegration.enableZshIntegration = true;
-    themeFile = "Alucard"; # Usually set by kitty +kitten themes
+    themeFile = "3024_Night"; # Usually set by kitty +kitten themes
     font.package = pkgs.nerd-fonts._0xproto;
     font.name = "0xProtoNerdFont";
     enableGitIntegration = true;
 
     settings = {
-      background_opacity = 0.6;
+      background_opacity = 1.0;
     };
     
   };
