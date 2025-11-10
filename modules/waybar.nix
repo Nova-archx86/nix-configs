@@ -237,7 +237,7 @@
           interval = 2;
           format = "{icon} %{capacity}";
           format-icons = [ "󰂃" "󰁿" "󱧥" ];
-          format-charging = "󰂄";
+          format-charging = "󰂄 %{capacity}";
         };
 
         "backlight" = {
