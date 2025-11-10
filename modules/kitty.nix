@@ -4,13 +4,13 @@
   programs.kitty = {
     enable = true;
     shellIntegration.enableZshIntegration = true;
-    themeFile = "3024_Night";
+    themeFile = "Nord";
     font.package = pkgs.nerd-fonts._0xproto;
     font.name = "0xProtoNerdFont";
     enableGitIntegration = true;
 
     settings = {
-      background_opacity = 1.0;
+      background_opacity = 0.9;
     };
     
   };

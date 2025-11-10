@@ -12,8 +12,8 @@ in
   services.hyprpaper = {
     enable = true;
     settings = {
-      preload = [ "~/nixos-config/wallpapers/andromeda.jpg" ];
-      wallpaper = [ "DP-1,~/nixos-config/wallpapers/andromeda.jpg" "LVDS-1,~/nixos-config/wallpapers/andromeda.jpg" ];
+      preload = [ "~/nixos-config/wallpapers/nord-mountains.png" ];
+      wallpaper = [ "DP-1,~/nixos-config/wallpapers/nord-mountains.png" "LVDS-1,~/nixos-config/wallpapers/nord-mountains.png" ];
     };
   };
 
@@ -54,7 +54,7 @@ in
           active_opacity = "1.0";
           inactive_opacity = "1.0";
           blur = {
-            enabled = true;
+            enabled = false;
             size = 8;
             passes = 1;
             new_optimizations = true;
@@ -138,7 +138,7 @@ in
       # Fix dragging issues with XWayland
       windowrulev2 = [
         "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
-        #"forcergbx, class:^(Emacs)$"
+        "forcergbx, class:^(Emacs)$"
         "float, class: ^(org.keepassxc.KeePassXC)$"
         "float, class: ^(steam)$"
         "float, class: ^(discord)$"
@@ -146,7 +146,7 @@ in
         "float, class: ^(pcmanfm)$"
         "float, class: ^(VirtualBox)$"
         "float, class: ^(.virt-manager-wrapped)$"
-        #"opacity 0.85 override 0.85 override, class: ^(Emacs)$"
+        "opacity 0.90 override 0.90 override, class: ^(Emacs)$"
       ];
     };
   };
