@@ -61,6 +61,7 @@
     #steam
     mupdf
     wl-clipboard
+    man
   ];
  # bar
 

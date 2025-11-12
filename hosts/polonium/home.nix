@@ -72,6 +72,9 @@
       wl-clipboard
       gzdoom
       virt-manager
+      man
+      gcc
+      gnumake
     ];
   };
   dconf.settings = {
