@@ -26,7 +26,7 @@ in
     settings = {
 
       # startup apps
-      exec-once = [ "keepassxc" ];
+      exec-once = [ emacs ];
       monitor = "DP-1,1920x1080@180.06,0x0,1";
 
       animations = {
