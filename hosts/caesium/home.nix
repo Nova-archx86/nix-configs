@@ -17,6 +17,7 @@
     ../../modules/gtk.nix
     ../../modules/starship.nix
     ../../modules/pass.nix
+    ../../modules/firefox.nix
   ];
 
   home.username = "nova";
