@@ -18,6 +18,7 @@
     ../../modules/starship.nix
     ../../modules/pass.nix
     ../../modules/yt-dlp.nix
+    ../../modules/firefox.nix
   ];
 
   home = {
