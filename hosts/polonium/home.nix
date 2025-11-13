@@ -6,7 +6,6 @@
     ../../modules/gh.nix
     ../../modules/zsh.nix
     ../../modules/gpg.nix
-    ../../modules/syncthing.nix
     ../../modules/hyprland.nix
     ../../modules/waybar.nix
     ../../modules/kitty.nix
@@ -84,5 +83,19 @@
       uris = ["qemu:///system"];
     };
   };
+  services.syncthing = {
+    enable = true;
+    settings = {
+      devices = {
+        "lt-caesium" = { id = "2HSEPQR-MHW6MFW-VPPYBOO-66ALYGF-4FIIQC4-VCRHBAZ-Q5EXSHL-BEUHVQG"; };
+      };
+      folders = {
+        "Org" = { path = "/home/nova/Sync/org/"; devices = [ "lt-caesium" ]; };
+        "Pictures" = { path = "/home/nova/Pictures/"; devices = [ "lt-caesium" ]; };
+        "Pass" = {path = "/home/nova/.password-store/"; devices = [ "lt-caesium" ]; };
+      };
+    };
+  }; 
+
   
 }

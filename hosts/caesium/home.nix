@@ -6,7 +6,6 @@
     ../../modules/gh.nix
     ../../modules/zsh.nix
     ../../modules/gpg.nix
-    ../../modules/syncthing.nix
     ../../modules/hyprland.nix
     ../../modules/waybar.nix
     ../../modules/kitty.nix
@@ -64,6 +63,20 @@
     wl-clipboard
     man
   ];
+
+  services.syncthing = {
+    enable = true;
+    settings = {
+      devices = {
+        "dt-polonium" = { id = "QDY3VRS-3VCDFW6-Z7BDKPM-PPE6GYW-77JEIEV-W3TGJYN-ZZYZWWC-RXRIYAO"; };
+      };
+      folders = {
+        "Org" = { path = "/home/nova/Sync/org/"; devices = [ "dt-polonium" ]; };
+        "Pictures" = { path = "/home/nova/Pictures/"; devices = [ "dt-polonium" ]; };
+        "Pass" = {path = "/home/nova/.password-store/"; devices = [ "dt-polonium" ]; };
+      };
+    };
+  };
  # bar
 
 }
