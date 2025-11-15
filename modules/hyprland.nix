@@ -94,9 +94,14 @@ in
         "$mainMod, E, exec, ${fileManager}"
         "$mainMod, F, fullscreen"
         "$mainMod, D, exec, ${menu}"
-        "$mainMod, L, exec, ${lock}"
+        "$mainMod SHIFT, L, exec, ${lock}"
         "$mainMod SHIFT, e, exec, ${emacs}"
         "$mainMod SHIFT, c, exec, hyprctl dispatch exit"
+
+        "$mainMod, J, movefocus, d"
+        "$mainMod, K, movefocus, u"
+        "$mainMod, H, movefocus, l"
+        "$mainMod, L, movefocus, r"
 
         "$mainMod, 1, workspace, 1"
         "$mainMod, 2, workspace, 2"
