@@ -6,6 +6,8 @@
 
     syntaxHighlighting.enable = true;
     enableCompletion = true;
+    autosuggestion.enable = true;
+    
     initContent = ''
       export PATH=/home/nova/.config/emacs/bin/:$PATH
       eval "$(starship init zsh)"
