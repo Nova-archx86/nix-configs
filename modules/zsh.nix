@@ -12,6 +12,7 @@
       export PATH=/home/nova/.config/emacs/bin/:$PATH
       eval "$(starship init zsh)"
     '';
+
     shellAliases = {
       nrs = "sudo nixos-rebuild switch --impure --flake /home/nova/nixos-config/";
       bdupdate = "betterdiscordctl -f canary install";
